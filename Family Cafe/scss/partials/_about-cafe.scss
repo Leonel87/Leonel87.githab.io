@@ -1,0 +1,63 @@
+.about-cafe {
+	padding: 20px 0 30px;
+	position: relative;
+	h2 {
+		padding-bottom: 17px;
+		&:before {
+			content: '';
+			background: url(../images/pattern-left.png) no-repeat;
+			background-size: cover;
+			position: absolute;
+			top: 20px;
+			left: 38%;
+			width: 36px; 
+			height: 36px;
+		}
+		&:after {
+			content: '';
+			background: url(../images/pattern-right.png) no-repeat;
+			background-size: cover;
+			position: absolute;
+			top: 20px;
+			right: 38%;
+			width: 36px; 
+			height: 36px;
+		}
+	}
+}
+.foto-cafe {
+	float: left;
+	width: 50%;
+	text-align: justify;
+}
+.img-block {
+	float: left;
+	margin-right: 15px;
+	width: 190px;
+	height: 263px;
+	img {
+		padding-bottom: 15px;
+	}
+	&:first-child {
+		margin-right: 15px;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.tradition {
+	float: left;
+	width: 50%;
+	p {
+		font-family: $font-base;
+		font-size: $fontSize-small;
+		color: $red-grey;
+		margin: 0;
+		padding-bottom: 16px;
+		padding-left: 15px;
+		text-align: justify;
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,122 @@
+footer {
+	padding: 30px 0 20px;
+}
+.menu-footer1,
+.menu-footer2,	{
+	li {
+		padding: 0 25px;
+		&:first-child {
+			background: none;
+		}
+		&:hover {
+			background: none;
+			cursor: default;
+		}
+		a {
+			font-size: $fontSize-small;
+			color: $footer-menu;
+			&:hover {
+				font-weight: bold;
+				color: $footer-contact;
+				transition: 0.5s all;
+			}
+		}
+	}
+}
+.menu-footer1 {
+	float: left;
+}
+.menu-footer2 {
+	float: right;
+}
+.footer-info {
+
+}
+.place-footer {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 55px 29px 0 87px;
+	margin-right: 30px;
+	p {
+		font-size: $fontSize-smaller;
+		color: $footer-logo;
+		padding-bottom: 20px;
+		margin: 0;
+		text-align: center;
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+}
+.logo-footer {
+	display: inline-block;
+	vertical-align: middle; 
+	margin-right: 30px;
+    padding: 0 80px 0 85px;
+	img {
+		height: 130px;
+		width: 215px;
+	}
+}
+.contact-footer {
+	display: inline-block;
+    vertical-align: middle;
+    padding: 60px 81px 0 47px;
+    margin: 0;
+    text-align: center;
+	a {
+		font-size: 21px;
+		font-weight: bold;
+		color: $footer-logo;
+		&:hover {
+			color: $footer-contact;
+		}
+	}
+	.reserv {
+		padding: 0;
+		background: none;
+		color: $footer-contact;
+		&:hover {
+			background: none;
+			color: $footer-logo;
+		}
+		&:before {
+			border: 0;
+		}
+		&:after {
+			border: 0;
+		}	
+	}
+}
+.logo-glaynec {
+	margin: 0 auto;
+    width: 200px;
+    position: relative;
+	background: url(../images/logo-border.png) no-repeat;
+	background-size: cover;
+	padding-bottom: 2px;
+    p {
+		font-family: $font-footer-logo;
+		font-size: $fontSize-smallest;
+		color: $footer-logo;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0;
+		padding: 6px 14px 6px 8px;
+		/* border: 1px dashed $footer-contact; */
+		&:before {
+			content: "";
+			background: url(../images/logo-footer.png) no-repeat;
+			background-size: cover;
+		    position: absolute;
+		    left: 14px;
+		    top: 7px;
+			width: 15px;
+			height: 14px;
+		    /* border-top: 15px solid transparent;
+		    border-bottom: 13px solid transparent;
+		    border-left: 15px dashed #e9445d;
+		    opacity: 1; */
+		}
+	}
+}
